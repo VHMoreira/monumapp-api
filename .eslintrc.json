@@ -23,7 +23,8 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "@typescript-eslint/no-empty-function": "off",
+    "prettier/prettier": "warn",
     "import/extensions": [
       "error",
       "ignorePackages",
