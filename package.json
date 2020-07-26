@@ -12,7 +12,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "uuidv4": "^6.2.0"
+    "uuidv4": "^6.2.0",
+    "pg": "^8.3.0",
+    "typeorm": "^0.2.25"
   },
   "devDependencies": {
     "@types/cors": "^2.8.6",
