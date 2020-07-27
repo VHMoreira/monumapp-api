@@ -10,6 +10,7 @@ import {
 } from 'typeorm';
 import Information from './Information';
 import Image from './Image';
+import History from './History';
 
 @Entity('monuments')
 export default class Monument {
