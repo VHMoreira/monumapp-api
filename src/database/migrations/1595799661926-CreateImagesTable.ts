@@ -18,6 +18,7 @@ export default class CreateImagesTable1595799661926
             type: 'uuid',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'url',

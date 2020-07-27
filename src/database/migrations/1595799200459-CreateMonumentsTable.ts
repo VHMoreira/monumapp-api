@@ -18,6 +18,7 @@ export default class CreateMonumentsTable1595799200459
             type: 'uuid',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'name',
@@ -89,9 +90,9 @@ export default class CreateMonumentsTable1595799200459
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
-    await queryRunner.dropForeignKey('monuments', 'HistoryOpenHour');
+    await queryRunner.dropForeignKey('monuments', 'HistoryMonuments');
     await queryRunner.dropColumn('monuments', 'history_id');
-    await queryRunner.dropForeignKey('monuments', 'InformationOpenHour');
+    await queryRunner.dropForeignKey('monuments', 'InformationMonuments');
     await queryRunner.dropColumn('monuments', 'information_id');
     await queryRunner.dropTable('monuments');
   }

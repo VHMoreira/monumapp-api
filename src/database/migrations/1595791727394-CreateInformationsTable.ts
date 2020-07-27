@@ -12,6 +12,7 @@ export default class CreateInformationsTable1595791727394
             type: 'uuid',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'description',

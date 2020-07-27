@@ -18,6 +18,7 @@ export default class CreateOpenHoursTable1595798035704
             type: 'uuid',
             isPrimary: true,
             generationStrategy: 'uuid',
+            default: 'uuid_generate_v4()',
           },
           {
             name: 'week_day',
